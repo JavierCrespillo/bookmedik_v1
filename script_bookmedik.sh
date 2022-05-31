@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sleep 30
+
 
 sed -i 's/$this->user="root";/$this->user="'${USER}'";/g' /var/www/html/core/controller/Database.php
 sed -i 's/$this->pass="";/$this->pass="'${PASSWD}'";/g' /var/www/html/core/controller/Database.php
